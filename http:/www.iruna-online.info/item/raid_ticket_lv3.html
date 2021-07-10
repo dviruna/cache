@@ -1,0 +1,221 @@
+<div class="col-md-7">
+<h4>Raid Ticket Lv3</h4><hr/>
+<div>
+
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+
+<div class="row">
+
+<div class="row">
+<div class="col-md-3 col-xs-4">
+
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+</div>
+<div class="col-md-3 col-xs-4">
+
+</div>
+<div class="col-md-3 col-xs-4">
+
+</div>
+</div>
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+<div id="fs" style="display: none;">
+<div class="row">
+<div class="col-md-12 col-xs-12">
+<input checked="" id="f_all" name="f" onclick="attr_filter();" type="checkbox" value="all"/> Show All<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_str" name="f" onclick="attr_filter();" type="checkbox" value="str"/> STR<br/>
+<input id="f_agi" name="f" onclick="attr_filter();" type="checkbox" value="agi"/> AGI<br/>
+<input id="f_vit" name="f" onclick="attr_filter();" type="checkbox" value="vit"/> VIT<br/>
+<input id="f_int" name="f" onclick="attr_filter();" type="checkbox" value="int"/> INT<br/>
+<input id="f_dex" name="f" onclick="attr_filter();" type="checkbox" value="dex"/> DEX<br/>
+<input id="f_crt" name="f" onclick="attr_filter();" type="checkbox" value="crt"/> CRT<br/>
+<input id="f_exp" name="f" onclick="attr_filter();" type="checkbox" value="exp"/> EXP<br/>
+<input id="f_drop" name="f" onclick="attr_filter();" type="checkbox" value="drop"/> Drop<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_atk" name="f" onclick="attr_filter();" type="checkbox" value="atk"/> ATK<br/>
+<input id="f_matk" name="f" onclick="attr_filter();" type="checkbox" value="matk"/> MATK<br/>
+<input id="f_def" name="f" onclick="attr_filter();" type="checkbox" value="def"/> DEF<br/>
+<input id="f_mdef" name="f" onclick="attr_filter();" type="checkbox" value="mdef"/> MDEF<br/>
+<input id="f_melee" name="f" onclick="attr_filter();" type="checkbox" value="melee"/> Melee<br/>
+<input id="f_magic" name="f" onclick="attr_filter();" type="checkbox" value="magic"/> Magic<br/>
+<input id="f_meleepierce" name="f" onclick="attr_filter();" type="checkbox" value="meleepierce"/> Melee P<br/>
+<input id="f_magicpierce" name="f" onclick="attr_filter();" type="checkbox" value="magicpierce"/> Magic P<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_range" name="f" onclick="attr_filter();" type="checkbox" value="range"/> Range<br/>
+<input id="f_rangecut" name="f" onclick="attr_filter();" type="checkbox" value="rangecut"/> Range cut<br/>
+<input id="f_ratecut" name="f" onclick="attr_filter();" type="checkbox" value="ratecut"/> Rate cut<br/>
+<input id="f_damagecut" name="f" onclick="attr_filter();" type="checkbox" value="damagecut"/> Dmg cut<br/>
+<input id="f_spellburst" name="f" onclick="attr_filter();" type="checkbox" value="spellburst"/> Spellburst<br/>
+<input id="f_autoskill" name="f" onclick="attr_filter();" type="checkbox" value="autoskill"/> Autoskill<br/>
+<input id="f_recoil" name="f" onclick="attr_filter();" type="checkbox" value="recoil"/> Recoil<br/>
+<input id="f_reflect" name="f" onclick="attr_filter();" type="checkbox" value="reflect"/> Reflect<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_accuracy" name="f" onclick="attr_filter();" type="checkbox" value="accuracy"/> Hit<br/>
+<input id="f_evasion" name="f" onclick="attr_filter();" type="checkbox" value="evasion"/> Evasion<br/>
+<input id="f_m_evasion" name="f" onclick="attr_filter();" type="checkbox" value="magicevasion"/> M Evasion<br/>
+<input id="f_absoluteaccuracy" name="f" onclick="attr_filter();" type="checkbox" value="absoluteaccuracy"/> Ab. Hit<br/>
+<input id="f_absoluteevasion" name="f" onclick="attr_filter();" type="checkbox" value="absoluteevasion"/> Ab. Evasion<br/>
+<input id="f_criticalrate" name="f" onclick="attr_filter();" type="checkbox" value="criticalrate"/> Crit Rate<br/>
+<input id="f_criticaldamage" name="f" onclick="attr_filter();" type="checkbox" value="criticaldamage"/> Crit Dmg<br/>
+<input id="f_haterise" name="f" onclick="attr_filter();" type="checkbox" value="haterise"/> Hate rise<br/>
+<input id="f_aspd" name="f" onclick="attr_filter();" type="checkbox" value="aspd"/> ASPD<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_maxhp" name="f" onclick="attr_filter();" type="checkbox" value="maxhp"/> MaxHP<br/>
+<input id="f_maxmp" name="f" onclick="attr_filter();" type="checkbox" value="maxmp"/> MaxMP<br/>
+<input id="f_hprecovery" name="f" onclick="attr_filter();" type="checkbox" value="hprecovery"/> HP Rec<br/>
+<input id="f_mprecovery" name="f" onclick="attr_filter();" type="checkbox" value="mprecovery"/> MP Rec<br/>
+<input id="f_healrecovery" name="f" onclick="attr_filter();" type="checkbox" value="healrecovery"/> Heal Rec<br/>
+<input id="f_healreward" name="f" onclick="attr_filter();" type="checkbox" value="healreward"/> Heal Reward<br/>
+<input id="f_skilldelay" name="f" onclick="attr_filter();" type="checkbox" value="skilldelay"/> Skill Delay<br/>
+<input id="f_itemdelay" name="f" onclick="attr_filter();" type="checkbox" value="itemdelay"/> Item Delay<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_meleetoneutral" name="f" onclick="attr_filter();" type="checkbox" value="meleetoneutral"/> Melee Neut.<br/>
+<input id="f_meleetofire" name="f" onclick="attr_filter();" type="checkbox" value="meleetofire"/> Melee Fire<br/>
+<input id="f_meleetowater" name="f" onclick="attr_filter();" type="checkbox" value="meleetowater"/> Melee Water<br/>
+<input id="f_meleetowind" name="f" onclick="attr_filter();" type="checkbox" value="meleetowind"/> Melee Wind<br/>
+<input id="f_meleetoearth" name="f" onclick="attr_filter();" type="checkbox" value="meleetoearth"/> Melee Earth<br/>
+<input id="f_meleetolight" name="f" onclick="attr_filter();" type="checkbox" value="meleetolight"/> Melee Light<br/>
+<input id="f_meleetodark" name="f" onclick="attr_filter();" type="checkbox" value="meleetodark"/> Melee Dark<br/>
+<input id="f_meleer" name="f" onclick="attr_filter();" type="checkbox" value="meleer"/> Melee R<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_neutralmagic" name="f" onclick="attr_filter();" type="checkbox" value="neutralmagic"/> Neut. Magic<br/>
+<input id="f_firemagic" name="f" onclick="attr_filter();" type="checkbox" value="firemagic"/> Fire Magic<br/>
+<input id="f_watermagic" name="f" onclick="attr_filter();" type="checkbox" value="watermagic"/> Water Magic<br/>
+<input id="f_windmagic" name="f" onclick="attr_filter();" type="checkbox" value="windmagic"/> Wind Magic<br/>
+<input id="f_earthmagic" name="f" onclick="attr_filter();" type="checkbox" value="earthmagic"/> Earth Magic<br/>
+<input id="f_lightmagic" name="f" onclick="attr_filter();" type="checkbox" value="lightmagic"/> Light Magic<br/>
+<input id="f_darkmagic" name="f" onclick="attr_filter();" type="checkbox" value="darkmagic"/> Dark Magic<br/>
+<input id="f_magicr" name="f" onclick="attr_filter();" type="checkbox" value="magicr"/> Magic R<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_neutralr" name="f" onclick="attr_filter();" type="checkbox" value="neutralr"/> Neut. R<br/>
+<input id="f_firer" name="f" onclick="attr_filter();" type="checkbox" value="firer"/> Fire R<br/>
+<input id="f_waterr" name="f" onclick="attr_filter();" type="checkbox" value="waterr"/> Water R<br/>
+<input id="f_windr" name="f" onclick="attr_filter();" type="checkbox" value="windr"/> Wind R<br/>
+<input id="f_earthr" name="f" onclick="attr_filter();" type="checkbox" value="earthr"/> Earth R<br/>
+<input id="f_lightr" name="f" onclick="attr_filter();" type="checkbox" value="lightr"/> Light R<br/>
+<input id="f_darkr" name="f" onclick="attr_filter();" type="checkbox" value="darkr"/> Dark R<br/>
+<input id="f_ailmentr" name="f" onclick="attr_filter();" type="checkbox" value="ailmentr"/> Ailment R<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_casttime" name="f" onclick="attr_filter();" type="checkbox" value="casttime"/> Cast Time<br/>
+<input id="f_parry" name="f" onclick="attr_filter();" type="checkbox" value="parry"/> Parry<br/>
+<input id="f_castdefense" name="f" onclick="attr_filter();" type="checkbox" value="castdefense"/> Cast Def<br/>
+<input id="f_shellbreak" name="f" onclick="attr_filter();" type="checkbox" value="shellbreak"/> Shell Break<br/>
+<input id="f_pet" name="f" onclick="attr_filter();" type="checkbox" value="pet"/> Pet<br/>
+<input id="f_movementspeed" name="f" onclick="attr_filter();" type="checkbox" value="movementspeed"/> Movement<br/>
+<input id="f_mpcost" name="f" onclick="attr_filter();" type="checkbox" value="mpcost"/> MP COST<br/>
+<input id="f_alldamager" name="f" onclick="attr_filter();" type="checkbox" value="alldamager"/> All Dmg R<br/>
+<input id="f_ignition" name="f" onclick="attr_filter();" type="checkbox" value="ignition"/> Ignition<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_knockout" name="f" onclick="attr_filter();" type="checkbox" value="knockout"/> Knockout<br/>
+<input id="f_poison" name="f" onclick="attr_filter();" type="checkbox" value="poison"/> Poison<br/>
+<input id="f_paralysis" name="f" onclick="attr_filter();" type="checkbox" value="paralysis"/> Paralysis<br/>
+<input id="f_burn" name="f" onclick="attr_filter();" type="checkbox" value="burn"/> Burn<br/>
+<input id="f_freeze" name="f" onclick="attr_filter();" type="checkbox" value="freeze"/> Freeze<br/>
+<input id="f_lethargy" name="f" onclick="attr_filter();" type="checkbox" value="lethargy"/> Lethargy<br/>
+<input id="f_dizzy" name="f" onclick="attr_filter();" type="checkbox" value="dizzy"/> Dizzy<br/>
+<input id="f_bleed" name="f" onclick="attr_filter();" type="checkbox" value="bleed"/> Bleed<br/>
+<input id="f_fear" name="f" onclick="attr_filter();" type="checkbox" value="fear"/> Fear<br/><br/>
+</div>
+</div>
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+</div>
+</div>
+<div class="row"><div class="col-md-12"><b>Items</b></div></div>
+<div>
+<div class="Collectibles default_attr">
+<b><a href="/cache/http:/www.iruna-online.info/item/raid_ticket_lv3.html" id="raid_ticket_lv3">Raid Ticket Lv3   [Collectibles] </a></b>
+<br/>
+<div class="ds">
+The reward for raid boss event
+You can play the lottery at Neints.</div><br/>
+</div>
+</div>
+<div class="row"><div class="col-md-12"><b>Monsters</b></div></div><div>
+<img class="img img-responsive" src="/web/20200125013743im_/http:/www.iruna-online.info/mobs/catafnia.png" width="100px;"/><b><a href="/cache/http:/www.iruna-online.info/monster/catafnia.html" id="monster_2120">Catafnia (Lv150)</a></b><br/>
+
+
+Drop:
+<a href="/cache/http:/www.iruna-online.info/item/raid_ticket_lv3.html">Raid Ticket Lv3</a><br/>
+
+
+Attr: Dark<br/>Weak: Light<br/>HP: 4,800,000<br/><a href="/cache/http:/www.iruna-online.info/zone/lv150_anniversary_raid.html">Lv150 Anniversary Raid   [1] </a> - <a href="/cache/http:/www.iruna-online.info/zones/ep_9.html">See Map</a><br/><br/>
+<img class="img img-responsive" src="/web/20200125013743im_/http:/www.iruna-online.info/mobs/feather_grecia.png" width="100px;"/><b><a href="/cache/http:/www.iruna-online.info/monster/feather_grecia.html" id="monster_2163">Feather Grecia (Lv200)</a></b><br/>
+
+
+Drop:
+<a href="/cache/http:/www.iruna-online.info/item/raid_ticket_lv3.html">Raid Ticket Lv3</a>, <a href="/cache/http:/www.iruna-online.info/item/raid_ticket_lv3.html">Raid Ticket Lv3</a>, <a href="/cache/http:/www.iruna-online.info/item/raid_ticket_lv3.html">Raid Ticket Lv3</a>, <a href="/cache/http:/www.iruna-online.info/item/raid_ticket_lv3.html">Raid Ticket Lv3</a><br/>
+
+
+Attr: None<br/>Weak: None<br/>HP: 9,600,000<br/><a href="/cache/http:/www.iruna-online.info/zone/lv150_anniversary_raid.html">Lv150 Anniversary Raid   [1] </a> - <a href="/cache/http:/www.iruna-online.info/zones/ep_9.html">See Map</a><br/><br/>
+<img class="img img-responsive" src="/web/20200125013743im_/http:/www.iruna-online.info/mobs/ginami.png" width="100px;"/><b><a href="/cache/http:/www.iruna-online.info/monster/ginami.html" id="monster_2119">Ginami (Lv150)</a></b><br/>
+
+
+Drop:
+<a href="/cache/http:/www.iruna-online.info/item/raid_ticket_lv3.html">Raid Ticket Lv3</a><br/>
+
+
+Attr: Light<br/>Weak: Dark<br/>HP: 4,800,000<br/><a href="/cache/http:/www.iruna-online.info/zone/lv150_anniversary_raid.html">Lv150 Anniversary Raid   [1] </a> - <a href="/cache/http:/www.iruna-online.info/zones/ep_9.html">See Map</a><br/><br/>
+<img class="img img-responsive" src="/web/20200125013743im_/http:/www.iruna-online.info/mobs/igro.png" width="100px;"/><b><a href="/cache/http:/www.iruna-online.info/monster/igro.html" id="monster_2118">Igro (Lv150)</a></b><br/>
+
+
+Drop:
+<a href="/cache/http:/www.iruna-online.info/item/raid_ticket_lv3.html">Raid Ticket Lv3</a><br/>
+
+
+Attr: Fire<br/>Weak: Water<br/>HP: 4,800,000<br/><a href="/cache/http:/www.iruna-online.info/zone/lv150_anniversary_raid.html">Lv150 Anniversary Raid   [1] </a> - <a href="/cache/http:/www.iruna-online.info/zones/ep_9.html">See Map</a><br/><br/>
+</div>
+<div class="row"><div class="col-md-12"><b>Lottery</b></div></div>
+<div>
+<div class="row"><div class="col-md-12">
+<b><a href="/cache/http:/www.iruna-online.info/lottery/raid_ticket_lv3.html">Raid Ticket Lv3</a></b>
+<div></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Rear Lance.html">Rear Lance [Additional]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Daiginjo [Holiday].html">Daiginjo [Holiday] [Additional]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Tentacion.html">Tentacion [Armor]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Indigo Bow.html">Indigo Bow [Bows]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Forbidden Book Vol. 3.html">Forbidden Book Vol. 3 [Canes]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Amber Sail III.html">Amber Sail III [Claws]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Magic Cookie.html">Magic Cookie [Collectibles]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Gold Pebble.html">Gold Pebble [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/High Mythril.html">High Mythril [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Wrought Iron.html">Wrought Iron [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Orichalcum.html">Orichalcum [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Light Bead.html">Light Bead [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Dark Bead.html">Dark Bead [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Wind Bead.html">Wind Bead [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Earth Bead.html">Earth Bead [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Water Bead.html">Water Bead [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Fire Bead.html">Fire Bead [Ores]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Raid Revita.html">Raid Revita [Recovery]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Raid Remagic.html">Raid Remagic [Recovery]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Dim Sword III.html">Dim Sword III [Swords]</a></div>
+<div><a href="/cache/http:/www.iruna-online.info/item/Lime Dew.html">Lime Dew [Throwing]</a></div>
+</div></div>
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+<br/>
+</div>
+</div>
+</div>

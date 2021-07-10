@@ -1,0 +1,80 @@
+<html>
+  <head>
+ 
+ <br> <title>Welcome</title>
+    <script>
+      var names,urls,index=0;
+      function fetchNames()
+      {
+        const tmp = new XMLHttpRequest();
+        tmp.onload = function() 
+        {
+        names=this.responseText.split("\n");
+        }
+        tmp.open("GET", "/cache/names");
+        tmp.send();
+      }
+      function fetchUrls()
+      {
+        const tmp = new XMLHttpRequest();
+        tmp.onload = function() 
+        {
+        urls=this.responseText.split("\n");
+        }
+        tmp.open("GET", "/cache/urls");
+        tmp.send();
+      }
+      function openLink(url)
+      {
+        document.getElementById("out").innerHTML="";
+         document.getElementById("frameId").src=url+".html";
+      }
+      function loadNext(ind)
+      {
+        index=0;
+        for(var i=ind;i<names.length;i++)
+        {
+          if(names[i].includes(document.getElementById('search').value.toUpperCase()))
+          {
+            document.getElementById("out").innerHTML+="<b onclick=openLink('"+urls[i]+"')>"+names[i]+"</b><br>";
+            index+=1;
+          }
+          if(index>=100){
+            document.getElementById("out").innerHTML+="<b>"+"<input type=submit value='Load More' onClick=loadNext("+i+")><br>";
+            break;}
+        }
+      }
+      function loadDoc() 
+      {
+        index=0;
+        document.getElementById("out").innerHTML="";
+        for(var i=0;i<names.length;i++)
+        {
+          if(names[i].includes(document.getElementById('search').value.toUpperCase()))
+          {
+            document.getElementById("out").innerHTML+="<b onclick=openLink('"+urls[i]+"')>"+names[i]+"</b><br>";
+            index+=1;
+          }
+          if(index>=100){
+            document.getElementById("out").innerHTML+="<b>"+"<input type=submit value='Load More' onClick=loadNext("+i+")><br>";
+            break;}
+        }
+      }
+      fetchNames();
+      fetchUrls();
+    </script>
+  </head>
+  <body>
+    <style>
+h3 {text-align: center;}
+h2 {text-align: center;}
+
+</style>
+    <br>
+    <hr><h3> Welcome to Dark Vengeance</h3><hr>
+    <h2><input id=search><input type=submit value="Search" onClick=loadDoc()></h2><br>
+    <p id=out></p><br>
+    <iframe style="width:100%;height:80%" id=frameId src="/cache/http:/www.iruna-online.info.html"></iframe><br>
+    
+  </body>
+</html>

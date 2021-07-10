@@ -1,0 +1,223 @@
+<div class="col-md-7">
+<h4>Obsidian</h4><hr/>
+<div>
+
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+
+<div class="row">
+
+<div class="row">
+<div class="col-md-3 col-xs-4">
+
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+</div>
+<div class="col-md-3 col-xs-4">
+
+</div>
+<div class="col-md-3 col-xs-4">
+
+</div>
+</div>
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+<div id="fs" style="display: none;">
+<div class="row">
+<div class="col-md-12 col-xs-12">
+<input checked="" id="f_all" name="f" onclick="attr_filter();" type="checkbox" value="all"/> Show All<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_str" name="f" onclick="attr_filter();" type="checkbox" value="str"/> STR<br/>
+<input id="f_agi" name="f" onclick="attr_filter();" type="checkbox" value="agi"/> AGI<br/>
+<input id="f_vit" name="f" onclick="attr_filter();" type="checkbox" value="vit"/> VIT<br/>
+<input id="f_int" name="f" onclick="attr_filter();" type="checkbox" value="int"/> INT<br/>
+<input id="f_dex" name="f" onclick="attr_filter();" type="checkbox" value="dex"/> DEX<br/>
+<input id="f_crt" name="f" onclick="attr_filter();" type="checkbox" value="crt"/> CRT<br/>
+<input id="f_exp" name="f" onclick="attr_filter();" type="checkbox" value="exp"/> EXP<br/>
+<input id="f_drop" name="f" onclick="attr_filter();" type="checkbox" value="drop"/> Drop<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_atk" name="f" onclick="attr_filter();" type="checkbox" value="atk"/> ATK<br/>
+<input id="f_matk" name="f" onclick="attr_filter();" type="checkbox" value="matk"/> MATK<br/>
+<input id="f_def" name="f" onclick="attr_filter();" type="checkbox" value="def"/> DEF<br/>
+<input id="f_mdef" name="f" onclick="attr_filter();" type="checkbox" value="mdef"/> MDEF<br/>
+<input id="f_melee" name="f" onclick="attr_filter();" type="checkbox" value="melee"/> Melee<br/>
+<input id="f_magic" name="f" onclick="attr_filter();" type="checkbox" value="magic"/> Magic<br/>
+<input id="f_meleepierce" name="f" onclick="attr_filter();" type="checkbox" value="meleepierce"/> Melee P<br/>
+<input id="f_magicpierce" name="f" onclick="attr_filter();" type="checkbox" value="magicpierce"/> Magic P<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_range" name="f" onclick="attr_filter();" type="checkbox" value="range"/> Range<br/>
+<input id="f_rangecut" name="f" onclick="attr_filter();" type="checkbox" value="rangecut"/> Range cut<br/>
+<input id="f_ratecut" name="f" onclick="attr_filter();" type="checkbox" value="ratecut"/> Rate cut<br/>
+<input id="f_damagecut" name="f" onclick="attr_filter();" type="checkbox" value="damagecut"/> Dmg cut<br/>
+<input id="f_spellburst" name="f" onclick="attr_filter();" type="checkbox" value="spellburst"/> Spellburst<br/>
+<input id="f_autoskill" name="f" onclick="attr_filter();" type="checkbox" value="autoskill"/> Autoskill<br/>
+<input id="f_recoil" name="f" onclick="attr_filter();" type="checkbox" value="recoil"/> Recoil<br/>
+<input id="f_reflect" name="f" onclick="attr_filter();" type="checkbox" value="reflect"/> Reflect<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_accuracy" name="f" onclick="attr_filter();" type="checkbox" value="accuracy"/> Hit<br/>
+<input id="f_evasion" name="f" onclick="attr_filter();" type="checkbox" value="evasion"/> Evasion<br/>
+<input id="f_m_evasion" name="f" onclick="attr_filter();" type="checkbox" value="magicevasion"/> M Evasion<br/>
+<input id="f_absoluteaccuracy" name="f" onclick="attr_filter();" type="checkbox" value="absoluteaccuracy"/> Ab. Hit<br/>
+<input id="f_absoluteevasion" name="f" onclick="attr_filter();" type="checkbox" value="absoluteevasion"/> Ab. Evasion<br/>
+<input id="f_criticalrate" name="f" onclick="attr_filter();" type="checkbox" value="criticalrate"/> Crit Rate<br/>
+<input id="f_criticaldamage" name="f" onclick="attr_filter();" type="checkbox" value="criticaldamage"/> Crit Dmg<br/>
+<input id="f_haterise" name="f" onclick="attr_filter();" type="checkbox" value="haterise"/> Hate rise<br/>
+<input id="f_aspd" name="f" onclick="attr_filter();" type="checkbox" value="aspd"/> ASPD<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_maxhp" name="f" onclick="attr_filter();" type="checkbox" value="maxhp"/> MaxHP<br/>
+<input id="f_maxmp" name="f" onclick="attr_filter();" type="checkbox" value="maxmp"/> MaxMP<br/>
+<input id="f_hprecovery" name="f" onclick="attr_filter();" type="checkbox" value="hprecovery"/> HP Rec<br/>
+<input id="f_mprecovery" name="f" onclick="attr_filter();" type="checkbox" value="mprecovery"/> MP Rec<br/>
+<input id="f_healrecovery" name="f" onclick="attr_filter();" type="checkbox" value="healrecovery"/> Heal Rec<br/>
+<input id="f_healreward" name="f" onclick="attr_filter();" type="checkbox" value="healreward"/> Heal Reward<br/>
+<input id="f_skilldelay" name="f" onclick="attr_filter();" type="checkbox" value="skilldelay"/> Skill Delay<br/>
+<input id="f_itemdelay" name="f" onclick="attr_filter();" type="checkbox" value="itemdelay"/> Item Delay<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_meleetoneutral" name="f" onclick="attr_filter();" type="checkbox" value="meleetoneutral"/> Melee Neut.<br/>
+<input id="f_meleetofire" name="f" onclick="attr_filter();" type="checkbox" value="meleetofire"/> Melee Fire<br/>
+<input id="f_meleetowater" name="f" onclick="attr_filter();" type="checkbox" value="meleetowater"/> Melee Water<br/>
+<input id="f_meleetowind" name="f" onclick="attr_filter();" type="checkbox" value="meleetowind"/> Melee Wind<br/>
+<input id="f_meleetoearth" name="f" onclick="attr_filter();" type="checkbox" value="meleetoearth"/> Melee Earth<br/>
+<input id="f_meleetolight" name="f" onclick="attr_filter();" type="checkbox" value="meleetolight"/> Melee Light<br/>
+<input id="f_meleetodark" name="f" onclick="attr_filter();" type="checkbox" value="meleetodark"/> Melee Dark<br/>
+<input id="f_meleer" name="f" onclick="attr_filter();" type="checkbox" value="meleer"/> Melee R<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_neutralmagic" name="f" onclick="attr_filter();" type="checkbox" value="neutralmagic"/> Neut. Magic<br/>
+<input id="f_firemagic" name="f" onclick="attr_filter();" type="checkbox" value="firemagic"/> Fire Magic<br/>
+<input id="f_watermagic" name="f" onclick="attr_filter();" type="checkbox" value="watermagic"/> Water Magic<br/>
+<input id="f_windmagic" name="f" onclick="attr_filter();" type="checkbox" value="windmagic"/> Wind Magic<br/>
+<input id="f_earthmagic" name="f" onclick="attr_filter();" type="checkbox" value="earthmagic"/> Earth Magic<br/>
+<input id="f_lightmagic" name="f" onclick="attr_filter();" type="checkbox" value="lightmagic"/> Light Magic<br/>
+<input id="f_darkmagic" name="f" onclick="attr_filter();" type="checkbox" value="darkmagic"/> Dark Magic<br/>
+<input id="f_magicr" name="f" onclick="attr_filter();" type="checkbox" value="magicr"/> Magic R<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_neutralr" name="f" onclick="attr_filter();" type="checkbox" value="neutralr"/> Neut. R<br/>
+<input id="f_firer" name="f" onclick="attr_filter();" type="checkbox" value="firer"/> Fire R<br/>
+<input id="f_waterr" name="f" onclick="attr_filter();" type="checkbox" value="waterr"/> Water R<br/>
+<input id="f_windr" name="f" onclick="attr_filter();" type="checkbox" value="windr"/> Wind R<br/>
+<input id="f_earthr" name="f" onclick="attr_filter();" type="checkbox" value="earthr"/> Earth R<br/>
+<input id="f_lightr" name="f" onclick="attr_filter();" type="checkbox" value="lightr"/> Light R<br/>
+<input id="f_darkr" name="f" onclick="attr_filter();" type="checkbox" value="darkr"/> Dark R<br/>
+<input id="f_ailmentr" name="f" onclick="attr_filter();" type="checkbox" value="ailmentr"/> Ailment R<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_casttime" name="f" onclick="attr_filter();" type="checkbox" value="casttime"/> Cast Time<br/>
+<input id="f_parry" name="f" onclick="attr_filter();" type="checkbox" value="parry"/> Parry<br/>
+<input id="f_castdefense" name="f" onclick="attr_filter();" type="checkbox" value="castdefense"/> Cast Def<br/>
+<input id="f_shellbreak" name="f" onclick="attr_filter();" type="checkbox" value="shellbreak"/> Shell Break<br/>
+<input id="f_pet" name="f" onclick="attr_filter();" type="checkbox" value="pet"/> Pet<br/>
+<input id="f_movementspeed" name="f" onclick="attr_filter();" type="checkbox" value="movementspeed"/> Movement<br/>
+<input id="f_mpcost" name="f" onclick="attr_filter();" type="checkbox" value="mpcost"/> MP COST<br/>
+<input id="f_alldamager" name="f" onclick="attr_filter();" type="checkbox" value="alldamager"/> All Dmg R<br/>
+<input id="f_ignition" name="f" onclick="attr_filter();" type="checkbox" value="ignition"/> Ignition<br/><br/>
+</div>
+<div class="col-md-3 col-xs-6">
+<input id="f_knockout" name="f" onclick="attr_filter();" type="checkbox" value="knockout"/> Knockout<br/>
+<input id="f_poison" name="f" onclick="attr_filter();" type="checkbox" value="poison"/> Poison<br/>
+<input id="f_paralysis" name="f" onclick="attr_filter();" type="checkbox" value="paralysis"/> Paralysis<br/>
+<input id="f_burn" name="f" onclick="attr_filter();" type="checkbox" value="burn"/> Burn<br/>
+<input id="f_freeze" name="f" onclick="attr_filter();" type="checkbox" value="freeze"/> Freeze<br/>
+<input id="f_lethargy" name="f" onclick="attr_filter();" type="checkbox" value="lethargy"/> Lethargy<br/>
+<input id="f_dizzy" name="f" onclick="attr_filter();" type="checkbox" value="dizzy"/> Dizzy<br/>
+<input id="f_bleed" name="f" onclick="attr_filter();" type="checkbox" value="bleed"/> Bleed<br/>
+<input id="f_fear" name="f" onclick="attr_filter();" type="checkbox" value="fear"/> Fear<br/><br/>
+</div>
+</div>
+<div class="row divider" role="separator" style="margin-top:20px;"></div>
+</div>
+</div>
+<div class="row"><div class="col-md-12"><b>Items</b></div></div>
+<div>
+<div class="Collectibles default_attr">
+<b><a href="/cache/http:/www.iruna-online.info/item/obsidian.html" id="obsidian">Obsidian   [Collectibles] </a></b>
+<br/>
+<br/>
+</div>
+</div>
+<div class="row"><div class="col-md-12"><b>Monsters</b></div></div><div>
+<img class="img img-responsive" src="/web/20200704132447im_/http:/www.iruna-online.info/mobs/enty.png" width="100px;"/><b><a href="/cache/http:/www.iruna-online.info/monster/enty.html" id="monster_215">Enty (Lv45)</a></b><br/>
+
+
+Drop:
+<a href="/cache/http:/www.iruna-online.info/item/enty_mask.html">Enty Mask</a>, <a href="/cache/http:/www.iruna-online.info/item/enty_cloth.html">Enty Cloth</a>, <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian</a>, <a href="/cache/http:/www.iruna-online.info/item/basic_magic_3.html">Basic Magic 3</a><br/>
+
+
+Attr: Dark<br/>Weak: Light<br/>Aggr: Under Active<br/><a href="/cache/http:/www.iruna-online.info/zone/witch_hunter_woods.html">Witch Hunter Woods </a> - <a href="/cache/http:/www.iruna-online.info/zones/ep_1.html">See Map</a><br/><br/>
+<img class="img img-responsive" src="/web/20200704132447im_/http:/www.iruna-online.info/mobs/enty.png" width="100px;"/><b><a href="/cache/http:/www.iruna-online.info/monster/enty.html" id="monster_216">Enty (Lv46)</a></b><br/>
+
+
+Drop:
+<a href="/cache/http:/www.iruna-online.info/item/enty_mask.html">Enty Mask</a>, <a href="/cache/http:/www.iruna-online.info/item/enty_cloth.html">Enty Cloth</a>, <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian</a>, <a href="/cache/http:/www.iruna-online.info/item/scythe.html">Scythe</a><br/>
+
+
+Attr: Dark<br/>Weak: Light<br/>Aggr: Under Active<br/><a href="/cache/http:/www.iruna-online.info/zone/witch_hunter_woods.html">Witch Hunter Woods </a> - <a href="/cache/http:/www.iruna-online.info/zones/ep_1.html">See Map</a><br/><br/>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div class="row"><div class="col-md-12"><b>Blacksmith</b></div></div> <div>
+<b><a href="/cache/http:/www.iruna-online.info/item/macuahuitl.html" id="blacksmith_macuahuitl">Macuahuitl [Swords]</a></b>
+<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x10</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/death_ent_splinter.html">Death Ent Splinter x5</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/pale_fur.html">Pale Fur x1</a><br/><a href="/cache/http:/www.iruna-online.info/zone/ioleu_village.html">Ioleu Village</a><br/><br/>
+</div>
+<div>
+</div>
+<div class="row"><div class="col-md-12"><b>Materials</b></div></div> <div>
+<b><a href="/cache/http:/www.iruna-online.info/item/crescent_moon.html" id="production_crescent_moon">Crescent Moon x1 [Canes] </a></b>
+<br/>
+Carpentry Lv18<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x2</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/baum_wood.html">Baum Wood x4</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/glowing_dust.html">Glowing Dust x10</a><br/> 4: <a href="/cache/http:/www.iruna-online.info/item/gold_fragment.html">Gold Fragment x4</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/silver_earring.html" id="production_silver_earring">Silver Earring x1 [Special] </a></b>
+<br/>
+Chasing Lv20<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/silver.html">Silver x1</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/glass_necklace.html" id="production_glass_necklace">Glass Necklace x1 [Special] </a></b>
+<br/>
+Chasing Lv28<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/silver.html_chain">Silver Chain x2</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/flint.html" id="production_flint">Flint x4 [Strengthening] </a></b>
+<br/>
+Smithing Lv159<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/chisel.html">Chisel x1</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/adamantite_whetstone.html">Adamantite Whetstone x1</a><br/>Success A: <a href="/cache/http:/www.iruna-online.info/item/flint.html">Flint x8</a><br/>Success B: <a href="/cache/http:/www.iruna-online.info/item/flint.html">Flint x12</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/mirror_bow.html" id="production_mirror_bow">Mirror Bow x1 [Bows] </a></b>
+<br/>
+Carpentry Lv206<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/silver.html">Silver x4</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/broken_bow.html">Broken Bow x1</a><br/> 4: <a href="/cache/http:/www.iruna-online.info/item/molten_liquid.html">Molten Liquid x1</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/mirror_claw.html" id="production_mirror_claw">Mirror Claw x1 [Claws] </a></b>
+<br/>
+Smithing Lv206<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/silver.html">Silver x4</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/broken_claw.html">Broken Claw x1</a><br/> 4: <a href="/cache/http:/www.iruna-online.info/item/molten_liquid.html">Molten Liquid x1</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/mirror_mail.html" id="production_mirror_mail">Mirror Mail x1 [Armor] </a></b>
+<br/>
+Tailoring Lv206<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/silver.html_chain">Silver Chain x4</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/torn_beastwear.html">Torn Beastwear x1</a><br/> 4: <a href="/cache/http:/www.iruna-online.info/item/molten_liquid.html">Molten Liquid x1</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/mirror_robe.html" id="production_mirror_robe">Mirror Robe x1 [Armor] </a></b>
+<br/>
+Tailoring Lv206<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/silver.html">Silver x4</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/torn_clothing.html">Torn Clothing x1</a><br/> 4: <a href="/cache/http:/www.iruna-online.info/item/molten_liquid.html">Molten Liquid x1</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/mirror_rod.html" id="production_mirror_rod">Mirror Rod x1 [Canes] </a></b>
+<br/>
+Carpentry Lv206<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/silver.html">Silver x4</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/broken_staff.html">Broken Staff x1</a><br/> 4: <a href="/cache/http:/www.iruna-online.info/item/molten_liquid.html">Molten Liquid x1</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/mirror_sword.html" id="production_mirror_sword">Mirror Sword x1 [Swords] </a></b>
+<br/>
+Smithing Lv206<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/silver.html">Silver x4</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/broken_sword.html">Broken Sword x1</a><br/> 4: <a href="/cache/http:/www.iruna-online.info/item/molten_liquid.html">Molten Liquid x1</a><br/><br/>
+<b><a href="/cache/http:/www.iruna-online.info/item/mirror_throw.html" id="production_mirror_throw">Mirror Throw x1 [Throwing] </a></b>
+<br/>
+Smithing Lv206<br/>
+ 1: <a href="/cache/http:/www.iruna-online.info/item/silver.html">Silver x4</a><br/> 2: <a href="/cache/http:/www.iruna-online.info/item/obsidian.html">Obsidian x1</a><br/> 3: <a href="/cache/http:/www.iruna-online.info/item/broken_shaft.html">Broken Shaft x1</a><br/> 4: <a href="/cache/http:/www.iruna-online.info/item/molten_liquid.html">Molten Liquid x1</a><br/><br/>
+</div>
+<div>
+<br/>
+</div>
+</div>
+</div>
