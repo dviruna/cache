@@ -46,6 +46,7 @@
       function loadDoc() 
       {
         index=0;
+        document.getElementById("out").innerHTML="";
         for(var i=0;i<names.length;i++)
         {
           if(names[i].includes(document.getElementById('search').value.toUpperCase()))
